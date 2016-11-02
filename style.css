@@ -1,0 +1,49 @@
+/*
+Theme Name: Expoesto
+Theme URI: http://github.com/expuesto
+Author: Dan Robert
+Author URI: http://danielwrobert.com
+Template: revelar
+Description: A child theme of Revelar
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: expuesto
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* Header alignment updates */
+@media screen and (min-width: 48.0625em) {
+	.site-header, .main-navigation-wrap, .site-branding {
+		display: flex;
+	}
+	
+	.site-header {
+		flex-direction: row;
+		align-items: stretch;
+	}
+	
+	.site-branding {
+		padding-right: 5%;
+		width: auto;
+		align-items: center;
+	}
+	
+	.main-navigation-wrap {
+		margin-left: auto;
+	}
+	
+	.main-navigation li {
+		border-top: none;
+	}
+}
+
+/* Footer Widget Widths */
+@media screen and (max-width: 768px) {
+	.widget {
+		max-width: 100%;
+	}
+}
